@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<!-- saved from url=(0044)https://www.npmjs.com/package/play-sound-v12 -->
+<html lang="en" class=" js"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style type="text/css">.autocomplete-container {  overflow: visible;}.autocomplete-suggestions {  border: 1px solid #999;  background: #FFF;  overflow-x: hidden;  overflow-y: auto;  cursor: default;}.autocomplete-suggestion {  padding: 2px 5px;  white-space: nowrap;  overflow: hidden;}.autocomplete-selected {  background: #F0F0F0;}.autocomplete-container strong {  font-weight: bold;}#powered-by-constructor-io {  font-size: 0.8em;  text-align:right;  background-color:rgb(255,255,192);  font-family:sans-serif;  padding: 4px 10px;  position: absolute;  border: 1px solid #999;}#constructorio-backing-node {  background-color:rgb(255,255,255);  padding: 4px 10px;  position: absolute;  border: 1px solid #FFF;}.autocomplete-suggestion-image {  float:left;  padding-right: 10px;}#autocomplete-direct-results:before {  content:'Products'}#autocomplete-search-container:before {  content:'Search Suggestions'}.autocomplete-suggestion-description {  font-size: 0.8em;  display: block;  margin-left: 10px;  line-height: 1.0em;}</style>
+  <meta charset="utf-8">
+  <title>play-sound-v12</title>
+
+    <meta name="description" content="Play audio files by shelling out to available audio tool based on node.js v0.12.x.">
+    <meta name="keywords" content="play,sound,audio">
+    <meta name="twitter:url" content="https://www.npmjs.com/package/play-sound-v12">
+    <meta name="twitter:title" content="npm: play-sound-v12">
+    <meta name="twitter:description" content="Play audio files by shelling out to available audio tool based on node.js v0.12.x.">
+
+  <meta http-equiv="cleartype" content="on">
+
+  <meta name="apple-mobile-web-app-capable" content="no">
+  <meta name="description" content="npm is the package manager for javascript">
+  <meta name="viewport" content="width=device-width,minimum-scale=1.0,initial-scale=1,user-scalable=yes">
+
+  <link rel="apple-touch-icon" sizes="57x57" href="https://www.npmjs.com/static/images/touch-icons/apple-touch-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="https://www.npmjs.com/static/images/touch-icons/apple-touch-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="https://www.npmjs.com/static/images/touch-icons/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="https://www.npmjs.com/static/images/touch-icons/apple-touch-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="https://www.npmjs.com/static/images/touch-icons/apple-touch-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="https://www.npmjs.com/static/images/touch-icons/apple-touch-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="https://www.npmjs.com/static/images/touch-icons/apple-touch-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="https://www.npmjs.com/static/images/touch-icons/apple-touch-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="https://www.npmjs.com/static/images/touch-icons/apple-touch-icon-180x180.png">
+  <link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 1)" href="https://www.npmjs.com/static/images/touch-icons/apple-touch-startup-image-1024x748.png">
+  <link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2)" href="https://www.npmjs.com/static/images/touch-icons/apple-touch-startup-image-1536x2008.png">
+  <link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2)" href="https://www.npmjs.com/static/images/touch-icons/apple-touch-startup-image-2048x1496.png">
+  <link rel="apple-touch-startup-image" media="(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 1)" href="https://www.npmjs.com/static/images/touch-icons/apple-touch-startup-image-320x460.png">
+  <link rel="apple-touch-startup-image" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)" href="https://www.npmjs.com/static/images/touch-icons/apple-touch-startup-image-640x1096.png">
+  <link rel="apple-touch-startup-image" media="(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 2)" href="https://www.npmjs.com/static/images/touch-icons/apple-touch-startup-image-640x920.png">
+  <link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 1)" href="https://www.npmjs.com/static/images/touch-icons/apple-touch-startup-image-768x1004.png">
+  <link rel="icon" type="image/png" href="https://www.npmjs.com/static/images/touch-icons/favicon-32x32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="https://www.npmjs.com/static/images/touch-icons/favicon-230x230.png" sizes="230x230">
+  <link rel="icon" type="image/png" href="https://www.npmjs.com/static/images/touch-icons/favicon-96x96.png" sizes="96x96">
+  <link rel="icon" type="image/png" href="https://www.npmjs.com/static/images/touch-icons/android-chrome-192x192.png" sizes="192x192">
+  <link rel="icon" type="image/png" href="https://www.npmjs.com/static/images/touch-icons/coast-228x228.png" sizes="228x228">
+  <link rel="icon" type="image/png" href="https://www.npmjs.com/static/images/touch-icons/favicon-16x16.png" sizes="16x16">
+  <link rel="manifest" href="https://www.npmjs.com/static/images/touch-icons/manifest.json">
+  <link rel="shortcut icon" href="https://www.npmjs.com/static/images/touch-icons/favicon.ico">
+  <link rel="yandex-tableau-widget" href="https://www.npmjs.com/static/images/touch-icons/yandex-browser-manifest.json">
+  <meta property="og:image" content="https://www.npmjs.com/static/images/touch-icons/open-graph.png">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="msapplication-TileColor" content="#cb3837">
+  <meta name="msapplication-TileImage" content="/static/images/touch-icons/mstile-144x144.png">
+  <meta name="msapplication-config" content="/static/images/touch-icons/browserconfig.xml">
+  <meta name="theme-color" content="#cb3837">
+
+  <link rel="canonical" href="./play-sound-v12_files/play-sound-v12.html">
+  <link rel="stylesheet" media="all" href="https://www.npmjs.com/static/css/index.f6b740dc.css">
+  <link rel="search" type="application/opensearchdescription+xml" href="https://www.npmjs.com/opensearch.xml" title="npm">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700">
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
+  <![endif]-->
+
+  <script id="hs-analytics" src="./play-sound-v12_files/419727.js"></script><script async="" src="./play-sound-v12_files/analytics.js"></script><script src="./play-sound-v12_files/index.min.97d1ee68.js"></script>
+
+<style>.autocomplete-container, .autocomplete-suggestions, #powered-by-constructor-io { width: 753px !important }</style></head>
+
+<body itemscope="" itemtype="http://schema.org/WebSite" data-crumb="DlZxVEklsVE_5sKP7zVQeDiCqlabM3GIZkxWALPkxrC">
+  <meta itemprop="url" content="https://www.npmjs.com/">
+
+    <div id="notification-banner" class="hidden">
+      <div class="container">
+        <hgroup>
+          <a href="https://www.npmjs.com/private-modules" data-event-trigger="click" data-event-name="private-modules-banner-signup-via-wombat">
+            <img src="./play-sound-v12_files/wombat-by-night.svg" alt="night wombat">
+          </a>
+          <h2>private npm is here.</h2>
+          <h3>publish unlimited private modules for just $7/month</h3>
+        </hgroup>
+        <a class="button" href="https://www.npmjs.com/private-modules" data-event-trigger="click" data-event-name="private-modules-banner-signup">sign up</a>
+        <a class="button button-subtle banner-close" data-event-trigger="click" data-event-name="private-modules-banner-no-thanks">no thanks</a>
+      </div>
+      <a class="button banner-close button-banner-close icon-x" data-event-trigger="click" data-event-name="private-modules-banner-no-thanks"><span class="a11y-only">close</span></a>
+    </div>
+
+    <nav>
+      <div class="container">
+        <a href="https://www.npmjs.com/package/play-sound-v12#" id="npm-expansions" data-event-trigger="click" data-event-name="npm-expansions">Never Print Magazines</a>
+        <a href="https://www.npmjs.com/private-modules" data-event-trigger="click" data-event-name="private-modules-nav-link">npm private modules</a>
+        <a href="https://www.npmjs.com/enterprise">npm On-Site</a>
+        <a href="https://docs.npmjs.com/">documentation</a>
+        <a href="http://blog.npmjs.org/?__hstc=72727564.58a1c44c5023bf7c9547de4860aa6ca9.1439527700602.1445880084490.1445968567142.17&__hssc=72727564.5.1445968567142&__hsfp=281166454">blog</a>
+        <a href="https://www.npmjs.com/npm-weekly">npm weekly</a>
+        <a href="https://www.npmjs.com/jobs">jobs</a>
+        <a href="https://www.npmjs.com/support">support</a>
+      </div>
+    </nav>
+
+  <header>
+    <div id="npm-logo">
+      <a href="https://www.npmjs.com/"><img src="./play-sound-v12_files/npm-logo.svg" alt="npm logo"></a>
+
+    </div>
+
+
+      <div id="user-info" class="anonymous">
+          <a href="https://www.npmjs.com/login"><img alt="" src="./play-sound-v12_files/wombat-avatar-small.png"></a>
+          <ul class="single">
+              <li><a href="https://www.npmjs.com/signup">sign up</a> or <a href="https://www.npmjs.com/login">log in</a></li>
+          </ul>
+
+      </div>
+
+
+    <form id="npm-search" action="https://www.npmjs.com/search" method="get" itemprop="potentialAction" itemscope="" itemtype="http://schema.org/SearchAction">
+      <meta itemprop="target" content="https://www.npmjs.com/search?q={q}">
+      <div id="site-search-container">
+          <input name="q" value="" type="search" id="site-search" placeholder="find packages" tabindex="1" autocorrect="off" autocapitalize="off" itemprop="query-input" autocomplete="off">
+      </div>
+      <input type="submit" id="site-search-submit">
+    </form>
+
+  </header>
+
+  <div class="container content">
+    
+<div class="content-column">
+
+  <h1 class="package-name">
+    <a href="./play-sound-v12_files/play-sound-v12.html" class="active">play-sound-v12</a>
+      <i class="icon-public"></i>
+  </h1>
+  <p class="package-description">Play audio files by shelling out to available audio tool based on node.js v0.12.x.</p>
+
+  <form class="star" action="./play-sound-v12_files/play-sound-v12.html">
+    <input type="hidden" name="name" value="play-sound-v12">
+    <input id="star-input" type="checkbox" name="isStarred" value="true">
+    <label for="star-input" class="icon-star"></label>
+    <div class="honey">
+      <label>If you are a robot, enter text here</label>
+      <input type="text" autocomplete="off" name="honey">
+    </div>
+    
+      <input type="hidden" name="crumb" value="DlZxVEklsVE_5sKP7zVQeDiCqlabM3GIZkxWALPkxrC">
+  </form>
+
+  <div id="readme" class="markdown">
+      <h1 id="user-content-play-sound" class="deep-link package-name-redundant"><a href="https://www.npmjs.com/package/play-sound-v12#play-sound">play-sound</a></h1>
+<p class="badge-only"><a href="https://travis-ci.org/iamdenny/play-sound-v12"><img src="./play-sound-v12_files/play-sound-v12.svg" class="badge"></a></p>
+<p class="package-description-redundant">Play sounds by shelling out to one of the available audio players based on node.js v0.12.x.</p>
+<h2 id="user-content-installation" class="deep-link"><a href="https://www.npmjs.com/package/play-sound-v12#installation">installation</a></h2>
+<pre><code>npm install play-sound-v12
+</code></pre>
+<h2 id="user-content-examples" class="deep-link"><a href="https://www.npmjs.com/package/play-sound-v12#examples">examples</a></h2>
+<pre><code class="highlight javascript"><pre class="editor editor-colors"><div class="line"><span class="source js"><span class="storage modifier js"><span>var</span></span><span>&nbsp;player&nbsp;</span><span class="keyword operator js"><span>=</span></span><span>&nbsp;</span><span class="support function js"><span>require</span></span><span class="meta brace round js"><span>(</span></span><span class="string quoted single js"><span class="punctuation string begin js"><span>'</span></span><span>play-sound-v12</span><span class="punctuation string end js"><span>'</span></span></span><span class="meta brace round js"><span>)</span><span>(</span></span><span>opts&nbsp;</span><span class="keyword operator js"><span>=</span></span><span>&nbsp;</span><span class="punctuation section scope begin js"><span>{</span></span><span class="punctuation section scope end js"><span>}</span></span><span class="meta brace round js"><span>)</span></span></span></div><div class="line"><span class="source js"><span>player</span><span class="meta delimiter method period js"><span>.</span></span><span>play</span><span class="meta brace round js"><span>(</span></span><span class="string quoted single js"><span class="punctuation string begin js"><span>'</span></span><span>foo.mp3</span><span class="punctuation string end js"><span>'</span></span></span><span class="meta brace round js"><span>)</span></span><span>&nbsp;</span><span class="comment line double-slash js"><span class="punctuation comment js"><span>//</span></span><span>&nbsp;$&nbsp;mplayer&nbsp;foo.mp3&nbsp;</span><span>&nbsp;</span></span></span></div></pre></code></pre>
+<p>Options:</p>
+<ul>
+<li><code>players</code> - list of available audio players to check (default: <code>['mplayer', 'afplay', 'mpg123', 'mpg321', 'play']</code>)</li>
+<li><code>player</code>  - audio player to use, skips availability checks</li>
+</ul>
+<h2 id="user-content-prior-art" class="deep-link"><a href="https://www.npmjs.com/package/play-sound-v12#prior-art">prior art</a></h2>
+<p><a href="https://github.com/Marak/play.js">play.js</a> - play sound files from node.js to your speakers</p>
+<h2 id="user-content-license" class="deep-link"><a href="https://www.npmjs.com/package/play-sound-v12#license">license</a></h2>
+<p>MIT</p>
+
+  </div>
+
+</div>
+
+<div class="sidebar">
+
+    <div class="autoselect-wrapper npm-install icon-download">
+      <input type="text" value="npm install play-sound-v12" readonly="">
+    </div>
+
+	<ul class="box">
+
+      <li class="last-publisher">
+          <a href="https://www.npmjs.com/~hi.iamdenny">
+            <img src="./play-sound-v12_files/069b20922b6280ec0434ceacb793be8b" alt="hi.iamdenny">
+            <span>hi.iamdenny</span>
+          </a>
+          published
+          <span data-date="2015-05-25T02:38:33.523Z" data-date-format="relative">5 months ago</span>
+      </li>
+
+    <li>
+      <strong>0.1.1</strong>
+      is the latest
+        of 2 releases
+    </li>
+
+      <li>
+        <a href="https://github.com/iamdenny/play-sound-v12">github.com/iamdenny/play-sound-v12</a>
+      </li>
+
+
+      <li>
+          <a href="http://opensource.org/licenses/MIT">MIT</a>
+        <span> license</span>
+      </li>
+
+  </ul>
+
+    <h3 title="collaborators">
+      <a href="https://www.npmjs.com/package/play-sound-v12/access">Collaborators</a>
+    </h3>
+
+    <ul class="humans collaborators">
+        <li>
+            <a href="https://www.npmjs.com/~hi.iamdenny" rel="tipsy" original-title="hi.iamdenny">
+                <img src="./play-sound-v12_files/069b20922b6280ec0434ceacb793be8b" alt="hi.iamdenny">
+            </a>
+        </li>
+
+
+    </ul>
+
+    <h3>Stats</h3>
+    <ul class="box">
+
+        <li>
+          <strong class="pretty-number daily-downloads">0</strong>
+          downloads in the last day
+        </li>
+        <li>
+          <strong class="pretty-number weekly-downloads">6</strong>
+          downloads in the last week
+        </li>
+        <li>
+          <strong class="pretty-number monthly-downloads">27</strong>
+          downloads in the last month
+        </li>
+
+        <li id="issues" data-ghapi="https://api.github.com/repos/iamdenny/play-sound-v12">
+          <span class="original" style="display: none;">Have an issue? <a href="https://github.com/iamdenny/play-sound-v12/issues">No open issues</a></span>
+            <span class="enhanced" style="">
+              <a href="https://github.com/iamdenny/play-sound-v12/issues">No open issues</a> on GitHub
+            </span>
+        </li>
+
+        <li id="pull_requests" style="">
+          <a href="https://github.com/iamdenny/play-sound-v12/pulls">No open pull requests</a> on GitHub
+        </li>
+
+    </ul>
+
+      <h3>Try it out</h3>
+      <ul class="box">
+        <li class="tonicdev"><a href="https://tonicdev.com/npm/play-sound-v12" target="_blank">Test play-sound-v12 in your browser.</a></li>
+      </ul>
+
+  <h3>Keywords</h3>
+  <p class="list-of-links">
+        <a href="https://www.npmjs.com/browse/keyword/play">play</a>, 
+        <a href="https://www.npmjs.com/browse/keyword/sound">sound</a>, 
+        <a href="https://www.npmjs.com/browse/keyword/audio">audio</a>
+  </p>
+
+  <h3>Dependencies (1)</h3>
+  <p class="list-of-links">
+                <a href="https://www.npmjs.com/package/find-exec-v12">find-exec-v12</a>
+  </p>
+
+
+  <script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "play-sound-v12",
+      "description": "Play audio files by shelling out to available audio tool based on node.js v0.12.x.",
+      "url": "https://www.npmjs.com/package/play-sound-v12",
+      "keywords": "play,sound,audio",
+      "applicationCategory": "DeveloperApplication",
+      "offers": {
+         "@type": "Offer",
+         "price": "0.00"
+      }
+    }
+  </script>
+
+    <div class="hiring-container" data-template="sidebar"><div class="ad">
+  <p>
+    <a href="http://www.jut.io/" title="Jut">Jut</a> is hiring.
+    <a class="quiet" href="https://www.npmjs.com/whoshiring">View more…</a>
+  </p>
+</div></div>
+
+</div>
+
+
+  </div>
+
+  <footer>
+
+    <div class="container">
+
+
+        <ul class="columnar">
+          <li>
+            <h3>You Need Help</h3>
+            <ul class="links">
+              <li><a href="https://docs.npmjs.com/">Documentation</a></li>
+              <li><a href="https://www.npmjs.com/support">Support / Contact Us</a></li>
+              <li><a href="http://status.npmjs.org/?__hstc=72727564.58a1c44c5023bf7c9547de4860aa6ca9.1439527700602.1445880084490.1445968567142.17&__hssc=72727564.5.1445968567142&__hsfp=281166454">Registry Status</a></li>
+              <li><a href="https://github.com/npm/newww/issues">Website Issues</a></li>
+              <li><a href="https://github.com/npm/npm/issues">CLI Issues</a></li>
+              <li><a href="https://www.npmjs.com/security">Security</a></li>
+            </ul>
+          </li>
+
+          <li>
+            <h3>About npm</h3>
+            <ul class="links">
+              <li><a href="https://www.npmjs.com/about">About npm, Inc</a></li>
+              <li><a href="https://www.npmjs.com/jobs">Jobs</a></li>
+              <li><a href="https://www.npmjs.com/private-modules">npm private modules</a></li>
+              <li><a href="http://blog.npmjs.org/?__hstc=72727564.58a1c44c5023bf7c9547de4860aa6ca9.1439527700602.1445880084490.1445968567142.17&__hssc=72727564.5.1445968567142&__hsfp=281166454">Blog</a></li>
+              <li><a href="https://twitter.com/npmjs">Twitter</a></li>
+              <li><a href="https://github.com/npm">GitHub</a></li>
+            </ul>
+          </li>
+
+          <li>
+            <h3>Legal Stuff</h3>
+            <ul class="links">
+              <li><a href="https://www.npmjs.com/policies/conduct">Code of Conduct</a></li>
+              <li><a href="https://www.npmjs.com/policies/disputes">Package Name Disputes</a></li>
+              <li><a href="https://www.npmjs.com/policies/npm-license">npm License</a></li>
+              <li><a href="https://www.npmjs.com/policies/privacy">Privacy Policy</a></li>
+              <li><a href="https://www.npmjs.com/policies/receiving-reports">Reporting Abuse</a></li>
+              <li><a href="https://www.npmjs.com/policies/">Other policies</a></li>
+            </ul>
+          </li>
+        </ul>
+
+
+    </div>
+
+    <div class="container centered">
+      <a href="https://www.npmjs.com/" id="npm-loves-you">
+        npm loves you
+      </a>
+    </div>
+
+  </footer>
+  
+  <script defer="" src="./play-sound-v12_files/vendor.min.76ac749e.js"></script>
+
+
+
+<!-- pid=10614 7fb337e80f53018fa72d39cdf4b791f7c6c48be4 https://www.npmjs.com www-10-west.internal.npmjs.com  -->
+<div class="autocomplete-container" style="position: absolute; display: none; max-height: 400px; z-index: 9999;"><div class="autocomplete-suggestions" style="position: absolute; display: none; max-height: 400px; z-index: 9999;"></div></div></body></html>

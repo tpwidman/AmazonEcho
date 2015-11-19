@@ -1,0 +1,14 @@
+HeroIntent who is your hero
+HeroIntent who do you like
+HeroIntent who do you love
+HeroIntent who has your respect
+HeroIntent tell me about a hero
+HeroIntent is there someone better me
+HeroIntent who do you look up to
+HeroIntent who commands your respect
+HeroIntent who is the best
+HeroIntent tell me about a great person
+HeroIntent tell me about a great man
+HeroIntent who is a great man
+
+

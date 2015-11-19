@@ -1,0 +1,39 @@
+TeacherIntent who is teaching the class today
+TeacherIntent who is teaching
+TeacherIntent who will teach today
+TeacherIntent who is teaching class today
+TeacherIntent to tell me who is teaching the class today
+TeacherIntent to tell me who is teaching
+TeacherIntent to tell me who will teach today
+TeacherIntent to tell me who is teaching class today
+
+
+WhatdoIntent what we are supposed to be doing
+WhatdoIntent what is going on today
+WhatdoIntent what are supposed to be working on
+WhatdoIntent what were doing right now
+WhatdoIntent what are we doing
+WhatdoIntent what are we doing today
+WhatdoIntent what are we doing now
+WhatdoIntent what are we doing right now
+WhatdoIntent what is happening
+WhatdoIntent what is going on
+WhatdoIntent what should i work on
+
+AboutWhoIntent {AboutName}
+
+LunchIntent what is for lunch
+LunchIntent what is for lunch today
+LunchIntent what are we having for lunch
+LunchIntent what are we eating today
+LunchIntent what are we eating
+LunchIntent what is for eats
+LunchIntent whats lunch
+LunchIntent are we eating pizza again
+
+AboutIntent tell me a fact about
+AboutIntent tell me something about
+AboutIntent to tell me a fact about
+AboutIntent to tell me something about
+AboutIntent what is a fact about
+AboutIntent what's a fact about

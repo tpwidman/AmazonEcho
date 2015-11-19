@@ -1,0 +1,25 @@
+{
+  "intents": [
+    {
+      "intent": "AboutIntent",
+      "slots": [
+        {
+          "name": "AboutName",
+          "type":"LIST_OF_NAMES"
+        }
+      ]
+    },
+    {
+      "intent": "TeacherIntent",
+      "slots": []
+    },
+    {
+      "intent": "LunchIntent",
+      "slots": []
+    },
+    {
+      "intent": "HelpIntent",
+      "slots": []
+    }
+  ]
+}
